@@ -61,7 +61,7 @@ export default function Edit() {
         };
 
         // This will send a post request to update the data in the database.
-        await fetch(`http://localhost:5000/resrevation/update/${params.id}`, {
+        await fetch(`http://localhost:5000/resrevation/${params.id}`, {
             method: "POST",
             body: JSON.stringify(editedReservation),
             headers: {
